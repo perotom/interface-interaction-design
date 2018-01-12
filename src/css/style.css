@@ -5835,7 +5835,7 @@ header .logo .navbar-brand {
 .thumbnail.movie img {
   display: block;
   width: 350px;
-  height: 350px;
+  height: 250px;
   object-fit: cover; }
 
 html {
@@ -5846,6 +5846,8 @@ body {
   padding-bottom: 80px; }
 
 .jumbotron {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #fff; }
   .jumbotron.star-wars {
     overflow: hidden;
