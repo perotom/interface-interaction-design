@@ -41,11 +41,11 @@
                                 <span class="glyphicon glyphicon-user"></span>
                                 Username <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Profile</a></li>
+                                <!-- <li><a href="profile.html">Profile</a></li> -->
                                 <li><a href="settings.html">Settings</a></li>
                                 <li><a href="#">Help</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Logout</a></li>
+                                <li><a href="index.html">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -64,9 +64,9 @@
 
             </div>
             <div class="col-md-4">
-                <h3 class="text-center" >Infos:</h3>
+                <h3 class="text-left" >Infos</h3>
                 <div class="row" style="margin-top: 15px;">
-                    <label class="col-md-3 text-center">Event:</label>
+                    <label class="col-md-3 text-center">Event</label>
                     <input class="col-md-9" id="inputName" placeholder="Eventname">
                 </div>
                 <div class="row" style="margin-top: 15px;">
@@ -81,10 +81,15 @@
                     <label class="col-md-3 text-center">Time</label>
                     <input class="col-md-9" id="inputTime" placeholder="Time">
                 </div>
+                <div class="row" style="margin-top: 15px;">
+                    <a type="button" class="btn btn-success  col-md-4 col-md-offset-4" href="#">
+                        <span class="glyphicon  glyphicon-check" aria-hidden="true"></span> save
+                    </a>
+                </div>
 
             </div>
             <div class="col-md-4 ">
-                <h3 class="text-center" >Members <small>(4/100)</small>:</h3>
+                <h3 class="text-center" >Members <small>(4/100)</small></h3>
                 <ul class="list-group">
                     <li class="list-group-item">
                         User1
@@ -104,19 +109,22 @@
                 </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <a type="button" class="btn btn-success  col-md-4 col-md-offset-4 " href="#" ">
-                    <span class="glyphicon  glyphicon-check" aria-hidden="true"></span> save
-                </a></div>
 
-        </div>
         <div class="row" style="margin-top: 25px;">
-            <div class="col-md-8 col-md-offset-2">
-                <h3 class="text-center"> Location: #CinemaLocation</h3>
+            <div class="col-md-8">
+                <h3 class="text-center"> Location #CinemaLocation</h3>
                 <img src="assets/googlemaps.jpg" width="100%" height="auto"/>
             </div>
-
+<div class="col-md-4">
+    <h3 class="text-center">Voting</h3>
+    <ul class="list-group">
+        <li class="list-group-item"><input type="radio" name="voting"> <span class="badge">1</span> Opt1</li>
+        <li class="list-group-item"><input type="radio" checked name="voting"> <span class="badge">2</span> Opt2</li>
+        <li class="list-group-item"><input type="radio" name="voting">  Opt3</li>
+        <li class="list-group-item"><input type="radio" name="voting"> Opt4</li>
+        <li class="list-group-item"><input type="radio" name="voting"> <span class="badge">1</span>Opt5</li>
+    </ul>
+</div>
         </div>
     </main>
 
