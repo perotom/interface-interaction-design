@@ -5,6 +5,7 @@
 @import "variables";
 @import "header";
 @import "footer";
+@import "movie-card";
 
 html {
   background: #f5f5f5;
@@ -13,4 +14,20 @@ html {
 body {
   position: relative;
   padding-bottom: 80px;
+}
+
+.jumbotron {
+  color: #fff;
+
+  &.star-wars {
+    overflow: hidden;
+    position: relative;
+    background: url("https://scontent.fvie2-1.fna.fbcdn.net/v/t31.0-8/23215851_1691112647606996_2481222550595182566_o.jpg?oh=014c6540d1e384fa73078d5a1429514e&oe=5AEB048B");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 1);
+  }
 }
