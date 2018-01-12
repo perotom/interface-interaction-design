@@ -55,40 +55,29 @@
     </header>
 
     <main role="main" class="container">
+
+
         <div class="row">
-            <h1>#EVENT</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
+            <h1 class="text-center">Eventname</h1></div>
+        <hr />
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-6 col-lg-offset-3">
                 <img src="assets/madmax.jpg" alt="eventimage" width="100%"height="auto"/>
-
-            </div>
-            <div class="col-md-4">
                 <h3 class="text-left" >Infos</h3>
-                <div class="row" style="margin-top: 15px;">
-                    <label class="col-md-3 text-center">Event</label>
-                    <input class="col-md-9" id="inputName" placeholder="Eventname">
-                </div>
-                <div class="row" style="margin-top: 15px;">
-                    <label class="col-md-3 text-center"  >City</label>
-                    <input class="col-md-9" id="inputCity" placeholder="City">
-                </div>
-                <div class="row" style="margin-top: 15px;">
-                    <label class="col-md-3 text-center">Movie</label>
-                    <input class="col-md-9" id="inputMovie" placeholder="Movie">
-                </div>
-                <div class="row" style="margin-top: 15px;">
-                    <label class="col-md-3 text-center">Time</label>
-                    <input class="col-md-9" id="inputTime" placeholder="Time">
-                </div>
-                <div class="row" style="margin-top: 15px;">
-                    <a type="button" class="btn btn-success  col-md-4 col-md-offset-4" href="#">
-                        <span class="glyphicon  glyphicon-check" aria-hidden="true"></span> save
-                    </a>
-                </div>
 
-            </div>
-            <div class="col-md-4 ">
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPlace">Place</label>
+                        <input type="text" class="form-control" id="inputPlace" placeholder="Place">
+                    </div>
+                    <button type="submit" class="btn btn-success"><span class="glyphicon  glyphicon-check" aria-hidden="true"></span>Save</button>
+                </form>
+
                 <h3 class="text-center" >Members <small>(4/100)</small></h3>
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -104,28 +93,24 @@
                         User4
                     </li>
                 </ul>
-                <a type="button" class="btn btn-primary col-md-4 col-md-offset-4 " href="inviteFriends.html">
-                    <span class="glyphicon  glyphicon-plus" aria-hidden="true"></span> invite
-                </a>
+                <div class="row">
+                    <a type="button" class="btn btn-primary col-md-4 col-md-offset-4 " href="inviteFriends.html">
+                        <span class="glyphicon  glyphicon-plus" aria-hidden="true"></span> invite
+                    </a>
+                </div>
+
+
+                <h3 class="text-center">Voting</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><input type="radio" name="voting"> <span class="badge">1</span> Opt1</li>
+                    <li class="list-group-item"><input type="radio" checked name="voting"> <span class="badge">2</span> Opt2</li>
+                    <li class="list-group-item"><input type="radio" name="voting">  Opt3</li>
+                    <li class="list-group-item"><input type="radio" name="voting"> Opt4</li>
+                    <li class="list-group-item"><input type="radio" name="voting"> <span class="badge">1</span>Opt5</li>
+                </ul>
             </div>
         </div>
 
-        <div class="row" style="margin-top: 25px;">
-            <div class="col-md-8">
-                <h3 class="text-center"> Location #CinemaLocation</h3>
-                <img src="assets/googlemaps.jpg" width="100%" height="auto"/>
-            </div>
-<div class="col-md-4">
-    <h3 class="text-center">Voting</h3>
-    <ul class="list-group">
-        <li class="list-group-item"><input type="radio" name="voting"> <span class="badge">1</span> Opt1</li>
-        <li class="list-group-item"><input type="radio" checked name="voting"> <span class="badge">2</span> Opt2</li>
-        <li class="list-group-item"><input type="radio" name="voting">  Opt3</li>
-        <li class="list-group-item"><input type="radio" name="voting"> Opt4</li>
-        <li class="list-group-item"><input type="radio" name="voting"> <span class="badge">1</span>Opt5</li>
-    </ul>
-</div>
-        </div>
     </main>
 
     <footer class="footer">
