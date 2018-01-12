@@ -1,7 +1,9 @@
-@import "bootstrap/bootstrap.scss";
-@import "bootstrap/bootstrap-grid.scss";
-@import "bootstrap/bootstrap-reboot.scss";
+@import "bootstrap";
+@import "bootstrap-compass";
+@import "bootstrap-mincer";
+@import "bootstrap-sprockets";
 @import "variables";
+@import "header";
 @import "footer";
 
 html {

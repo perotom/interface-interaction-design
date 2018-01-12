@@ -16,9 +16,6 @@
     "url": "https://github.com/perotom/interface-interaction-design/issues"
   },
   "homepage": "https://github.com/perotom/interface-interaction-design#readme",
-  "dependencies": {
-    "bootstrap": "^4.0.0-beta.3"
-  },
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
