@@ -5831,6 +5831,11 @@ header .logo .navbar-brand {
   height: 60px;
   line-height: 60px;
   background-color: #f5f5f5; }
+  .footer ul {
+    list-style: none;
+    padding: 0; }
+    .footer ul li {
+      height: 30px; }
 
 .thumbnail.movie img {
   display: block;
