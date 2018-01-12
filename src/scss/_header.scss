@@ -1,0 +1,19 @@
+@import "bootstrap/variables";
+
+header {
+
+  .logo {
+
+    img {
+      margin-top: 6px;
+      margin-right: 10px;
+      height: 36px;
+      float: left;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: $brand-primary;
+    }
+  }
+}
