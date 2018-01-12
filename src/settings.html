@@ -57,9 +57,43 @@
     <div class="container">
         <h2>Settings</h2>
         <div class="row">
-            <div id="cinemas" class="col-sm-4">
+
+            <form>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" id="inputName" placeholder="Current USERNAME">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse"
+                            data-target="#changepassword">Change Password
+                    </button>
+                    <div id="changepassword" class="collapse">
+                        <ul class="list-group">
+                            <p></p>
+                            <label>Old Password</label>
+                            <input class="form-control" placeholder="Enter Old Password">
+                            <p></p>
+                            <label>New Password</label>
+                            <input class="form-control" placeholder="Enter New Password">
+                            <p></p>
+                            <label>Repeat New Password</label>
+                            <input class="form-control" placeholder="Repeat New Password">
+                            <p></p>
+                            <button type="button" class="btn btn-success" data-toggle="collapse"
+                                    data-target="#changepassword">Save Password
+                            </button>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label>E-Mail</label>
+                    <input class="form-control" id="inputMovie" placeholder="Current Email-Address">
+                </div>
+            </form>
+            <div id="cinemas" class="page-header col-sm-4">
                 <div class="container-fluid">
-                    <button type="button" class="btn btn-info" >Your Cinemas</button>
+                    <label>Your Cinemas</label>
                     <div id="cinemalist">
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-info">Cineplexx
@@ -159,9 +193,9 @@
                 </div>
             </div>
 
-            <div id="genres" class="col-sm-4">
-                <button type="button" class="btn btn-info">Your Genres
-                </button>
+            <div id="genres" class="page-header col-sm-4">
+                <label>Your Genres
+                </label>
                 <div id="genrelist">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-info">Action
@@ -191,6 +225,8 @@
                 </div>
 
             </div>
+
+            <button class="btn btn-success btn-lg col-md-8 col-md-offset-2">Save Settings</button>
 
         </div>
 
