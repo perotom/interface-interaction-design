@@ -3,7 +3,7 @@
 <head>
     <title>Cinema</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,15 +11,22 @@
 </head>
 
 <body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
 
 <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="browse_app">
@@ -46,24 +53,146 @@
 <main role="main" class="container">
 
     <div class="container">
+        <h2>Settings</h2>
         <div class="row">
 
-            <div class="col">
+
+            <div id="cinemas" class="col">
                 <div class="container-fluid">
-                    <h2>Settings</h2>
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#cinemalist">Your Cinemas</button>
-                    <div id="cinemalist" class="collapse">
-                    <ul  class="list-group">
-                        <li class="list-group-item list-group-item-info">Cineplexx     <button class="btn btn-danger float-right">Delete </button></li>
-                        <li class="list-group-item list-group-item-info">Augartenkino     <button class="btn btn-danger float-right">Delete </button></li>
-                        <li class="list-group-item list-group-item-info">Lugner City Kino     <button class="btn btn-danger float-right">Delete </button></li>
-                        <button type="button" class="btn btn-primary">Add Cinema</button>
-                    </ul>
+                    <button type="button" class="btn btn-info" >Your Cinemas</button>
+                    <div id="cinemalist">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">Cineplexx
+                                <button class="btn btn-danger float-right">Delete</button>
+                            </li>
+                            <li class="list-group-item list-group-item-info">Augartenkino
+                                <button class="btn btn-danger float-right">Delete</button>
+                            </li>
+                            <li class="list-group-item list-group-item-info">Lugner City Kino
+                                <button class="btn btn-danger float-right">Delete</button>
+                            </li>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse"
+                                    data-target="#newcinema">Add Cinema
+                            </button>
+                        </ul>
+                        <div id="newcinema" class="collapse">
+                            <div class="list-group">
+                                <button type="button" class="btn list-group-item list-group-item-action btn-success"
+                                        data-toggle="collapse" data-target="#viennacinemalist">Vienna
+                                </button>
+                                <div id="viennacinemalist" class="collapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Cinema 1
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 2
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 3
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button type="button" class=" btn list-group-item list-group-item-action btn-success" data-toggle="collapse" data-target="#upperaustriacinemalist">Upper Austria
+                                    </button>
+                                <div id="upperaustriacinemalist" class="collapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Cinema 1
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 2
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 3
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button type="button" class="btn list-group-item list-group-item-action btn-success" data-toggle="collapse" data-target="#loweraustriacinemalist">Lower Austria
+                                    </button>
+                                <div id="loweraustriacinemalist" class="collapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Cinema 1
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 2
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 3
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button type="button" class="btn list-group-item list-group-item-action btn-success" data-toggle="collapse" data-target="#styriacinemalist">Styria</button>
+                                <div id="styriacinemalist" class="collapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Cinema 1
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 2
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 3
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button type="button" class="btn list-group-item list-group-item-action btn-success" data-toggle="collapse" data-target="#salzburgcinemalist">Salzburg
+                                    </button>
+                                <div id="salzburgcinemalist" class="collapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Cinema 1
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 2
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                        <li class="list-group-item list-group-item-info">Cinema 3
+                                            <button class="btn btn-info float-right">Add</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <h2></h2>
+            <div id="genres" class="col">
+                <button type="button" class="btn btn-info">Your Genres
+                </button>
+                <div id="genrelist">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Action
+                            <button class="btn btn-danger float-right">Delete</button>
+                        </li>
+                        <li class="list-group-item list-group-item-info">Drama
+                            <button class="btn btn-danger float-right">Delete</button>
+                        </li>
+                        <li class="list-group-item list-group-item-info">Comedy
+                            <button class="btn btn-danger float-right">Delete</button>
+                        </li>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#newgenre">Add Genre</button>
+                    </ul>
+                    <div id="newgenre" class="collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">Genre 1
+                                <button class="btn btn-info float-right">Add</button>
+                            </li>
+                            <li class="list-group-item list-group-item-info">Genre 2
+                                <button class="btn btn-info float-right">Add</button>
+                            </li>
+                            <li class="list-group-item list-group-item-info">Genre 3
+                                <button class="btn btn-info float-right">Add</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-    </div>
 
 
 </main>
