@@ -26,6 +26,20 @@ body {
     background-size: cover;
     background-position: center center;
   }
+  &.interstellar {
+    overflow: hidden;
+    position: relative;
+    background: url("http://geekleagueofamerica.com/wp-content/uploads/2014/11/inters.jpg");
+    background-size: cover;
+    background-position: center 83%;
+  }
+  &.mad-max {
+    overflow: hidden;
+    position: relative;
+    background: url("https://static.gamespot.com/uploads/screen_kubrick/1406/14063904/2930954-madmax_20150831.jpg");
+    background-size: cover;
+    background-position: center 30%;
+  }
 
   h1, h2, h3, h4, h5, h6, p {
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 1);
