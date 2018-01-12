@@ -54,79 +54,83 @@
         <h1 class="text-center">Invite friends to #EVENTNAME</h1></div>
     <hr />
 
-    <div class="row">
-        <!-- <h3 class="text-center" style="margin-top:50px">Name or Email:</h3></div> -->
-    <div class="row" style="margin-bottom:20px;">
-        <input type="text" class="col-md-4 col-md-offset-4" placeholder="Username or Email" style="height:50px;border-radius:5px;"/></div>
-    <div class="row" style="margin-bottom:20px;">
-        <button type="button" class="btn btn-default btn-lg col-md-4 col-md-offset-4">
-            <span class="glyphicon  glyphicon-plus" aria-hidden="true"></span> Invite
-        </button>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Enter email address or username">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Invite!</button>
+                </span>
+            </div>
+
+            <h3 class="text-center" style="margin-top:50px">recently used</h3>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 text-center">
+                    <div class="thumbnail user">
+                        <div class="caption">
+                            <img src="https://robohash.org/max"/>
+                            <h4>Max Muster</h4>
+                            <p>max@mustermann.at</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Invite</a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center">
+                    <div class="thumbnail user">
+                        <div class="caption">
+                            <img src="https://robohash.org/ines"/>
+                            <h4>Ines Lione</h4>
+                            <p>ines@aon.at</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Invite</a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center">
+                    <div class="thumbnail user">
+                        <div class="caption">
+                            <img src="https://robohash.org/mani"/>
+                            <h4>Manfred Kohl</h4>
+                            <p>mani@gmx.at</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Invite</a> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="text-center" style="margin-top:50px">members</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <img class="user" src="https://robohash.org/test"/>
+                    <span style="margin-top: 8px;">Thomas Peinsipp</span>
+                    <a style="float: right; margin-top: 8px;" href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <img class="user" src="https://robohash.org/test2"/>
+                    <span style="margin-top: 8px;">Thomas Peinsipp</span>
+                    <a style="float: right; margin-top: 8px;" href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <img class="user" src="https://robohash.org/test3"/>
+                    <span style="margin-top: 8px;">Thomas Peinsipp - <i style="opacity: 0.5">Pending</i></span>
+                    <a style="float: right; margin-top: 8px;" href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <img class="user" src="https://robohash.org/test4"/>
+                    <span style="margin-top: 8px;">Thomas Peinsipp - <i style="opacity: 0.5">Pending</i></span>
+                    <a style="float: right; margin-top: 8px;" href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                </li>
+                <li class="list-group-item">
+                    <img class="user" src="https://robohash.org/test5"/>
+                    <span style="margin-top: 8px;">Thomas Peinsipp - <i style="opacity: 0.5">Pending</i></span>
+                    <a style="float: right; margin-top: 8px;" href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
+                </li>
+            </ul>
+
+        </div>
     </div>
-        <!-- <div class="row">
-         <a type="button" class="btn btn-success btn-lg col-md-4 col-md-offset-4 " href="home.html">
-             <span class="glyphicon  glyphicon-check" aria-hidden="true"></span> Save changes
-         </a>
-     </div>-->
 
-    <div class="row">
-        <h3 class="text-center" style="margin-top:50px">recently used</h3></div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4 text-center">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h4>User1</h4>
-                    <p>Name</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Invite</a> </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h4>User3</h4>
-                    <p>Name</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Invite</a> </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h4>User4</h4>
-                    <p>Name</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Invite</a> </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-        <hr />
-    <h3 class="text-center" style="margin-top:50px">already members:</h3>
-    <ul class="list-group">
-        <li class="list-group-item">
-            User1
-        </li>
-        <li class="list-group-item">
-            User2
-        </li>
-        <li class="list-group-item">
-            User3
-        </li>
-        <li class="list-group-item">
-            User4
-        </li>
-    </ul>
-
-    <h3 class="text-center" style="margin-top:50px">already invited:</h3>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
-            User5
-        </li>
-        <li class="list-group-item"><a href="#" alt="delete"><span class="glyphicon glyphicon-remove"></span></a>
-            User6
-        </li>
-    </ul>
 </main>
 
 <footer class="footer">

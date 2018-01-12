@@ -47,3 +47,18 @@ body {
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 1);
   }
 }
+
+.thumbnail.user {
+  img {
+    border-radius: 50%;
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+img.user {
+  border-radius: 50%;
+  max-width: 32px;
+  margin-right: 14px;
+}
